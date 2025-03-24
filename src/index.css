@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  padding: 2vh;
+  padding-right: 0px;
+  padding-left: 4vw;
+}
+
+#about {
+  margin: 2vh 10vw 2vh 10vw;
+  text-align: center;
+}
+
+#banner {
+  display: flex;
+  background-color: #F08000	;
+  padding: 2vh;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  background-color:  #FFAA33;
+  margin: 0px;
+  width: 100%;
+}
+
+.App {
+  font-weight: bold;
+
+}
+
+.Slogan {
+  width: 20vw;
+  margin: 0px 2vw 0px 2vw;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.LinkStyles {
+  flex: 1;
+}
+
+.LinkStyles button {
+  min-height: 100%;
+  width: 100%;
+  background-color: #F08000;
+  border-width: 0px;
+  border-left: 2px solid bLack;
+  font-size: x-large;
+}
+
+.LinkStyles button:hover {
+  font-size: xx-large	;
+}
+
+.LinkStyles button:active {
+  background-color: #CC5500	;
+}
+
