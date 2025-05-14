@@ -13,19 +13,19 @@ function App() {
       <div className={'App'}>
         <header id='banner'>
           <img src={logo} alt="GroupSoup logo" height={100}/>
-          <p className={'Slogan'}>Putting the "Social" <br/> back into social media.</p>
+          <p className={'Slogan'}> GROUPSOUP </p>
           <nav>
             <Link className={'LinkStyles'} to="/">
-                    <button>HOME</button>
+                    <button>Home</button>
             </Link>
             <Link className={'LinkStyles'} to="/about">
-                    <button>ABOUT</button>
+                    <button>About</button>
             </Link>
             <Link className={'LinkStyles'} to="/register">
-                    <button>PRE-<br/>REGISTER</button>
+                    <button>Pre-<br/>Register</button>
             </Link>
             <Link className={'LinkStyles'} to="/contact">
-                    <button>CONTACT</button>
+                    <button>Contact</button>
             </Link>
           </nav>
         </header>

@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div id='home'>
-      <h1>Home Page</h1>
-      <p>Welcome to the home page.</p>
+      <img src={require('../images/Overlay.png')} className='Overlay'></img>
+      <h1 id='HomeText'>MEET <br/> SOUPER <br/>PEOPLE.</h1>
+      
     </div>
   );
 }
