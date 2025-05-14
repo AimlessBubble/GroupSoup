@@ -22,7 +22,7 @@ function App() {
                     <button>ABOUT</button>
             </Link>
             <Link className={'LinkStyles'} to="/register">
-                    <button>PRE-REGISTER</button>
+                    <button>PRE-<br/>REGISTER</button>
             </Link>
             <Link className={'LinkStyles'} to="/contact">
                     <button>CONTACT</button>
