@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 main {
@@ -55,10 +56,21 @@ img {
 }
 
 #banner {
+  position: fixed;
+  display: block;
+  transition: top 0.5s;
   display: flex;
   background-color: #f97623;
   padding: 2vh;
   padding: 0px;
+  width: 100%;
+  z-index: 3;
+  height: 18vh;
+}
+
+#mockBanner{
+  height: 18vh;
+  background-color: #f97623;
 }
 
 #HomeText {
@@ -104,6 +116,8 @@ nav {
   background-color: #f97623;
   margin: 0px;
   width: 100%;
+  transition: top 0.3s;
+
 }
 
 .App {
@@ -112,7 +126,6 @@ nav {
   flex-direction: column;
   height: 100vh;
   margin: 0px;
-
 }
 
 .Slogan {

@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <div className={'App'}>
+        <header id='mockBanner'></header>
         <header id='banner'>
           <img src={logo} alt="GroupSoup logo" height={100}/>
           <p className={'Slogan'}> GROUPSOUP </p>
