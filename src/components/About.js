@@ -7,7 +7,7 @@ function About() {
     <div>
       <img src={require('../images/SoupOverlay.png')} id='SoupLay'></img>
       <h1 className='AboutHeader text-right'> BUILDING THE RECIPE <br/> FOR COMMUNITY </h1>
-      <p className='AboutText text-right'> Doom scrolling comes with an <br/> aftertaste, this is the story of how <br/> we plan to take online searches to <br/> real-life community through <br/> GroupSoup.</p>
+      <p className='AboutText text-right'> Doom scrolling comes with an <br/> aftertaste, this is the story of how <br/> we plan to take online searches to <br/> real-life community through <br/> GroupSoup. <br/> <br/> <br/> <br/> <br/><br/> <br/> </p>
       <h1 className='AboutHeader text-center'> HOW IT ALL STARTED </h1>
       <p className='AboutText text-center'> GroupSoup was created to solve a common problem: finding in-person community groups shouldn’t be so difficult. After struggling to locate a local spoken-word poetry group, founder Zevez envisioned a platform that makes it easy to discover and connect with real-world communities. GroupSoup bridges online discovery with offline connection through an interactive map, tailored recommendations, and features that promote meaningful in-person engagement. By partnering with local businesses and community hubs, GroupSoup turns everyday places into gathering points for people with shared interests — making it simple to find your people and be present when you do.</p>
       <h1 className='AboutHeader text-center'> OUR MISSION </h1>
