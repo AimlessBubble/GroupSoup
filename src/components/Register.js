@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Register() {
   return (
     <div>
-      <h1 className='BigHeader text-center'>JOIN THE COMMUNITY <br/> REVOLUTION</h1>
+      <h1 className='BigHeader text-center topElement'>JOIN THE COMMUNITY <br/> REVOLUTION</h1>
       <p className='MidText secondThird'> Be among the first to discover what life can be like with an accessible, vibrant community through GroupSoup in Rochester, NY! Please provide the information below so that we can reach out to you when we launch to the public!</p>
 
       <form>

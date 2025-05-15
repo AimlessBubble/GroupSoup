@@ -46,6 +46,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var prevScrollpos = window.pageYOffset;
+    var threshold = window.innerHeight * 0.2;
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
@@ -54,6 +55,8 @@
         document.getElementById("banner").style.top = "-30%";
       }
       prevScrollpos = currentScrollPos;
+    
+      
     };
 
     document.querySelectorAll('.profile').forEach(el => {
