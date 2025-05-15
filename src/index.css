@@ -81,7 +81,7 @@ img {
   text-align: left;
   margin-left: 15%;
   margin-top: 2%;
-  text-shadow: -8px 6px 0px #d9572e;
+  text-shadow: -1vw 1vh 0px #d9572e;
   font-weight: 900;
   z-index: 2;
 }
@@ -94,21 +94,40 @@ img {
   width: 120vw;
 }
 
-.AboutHeader {
-  font-family: 'Bagel Fat One', sans-serif;
+.MidHeader {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-size: 5vw;
-  color: #d9572e;
-  margin: 3%;
+  color: #ff9e5e;
+  text-align: left;
+  text-shadow: -0.4vw 0.4vh 0px #d9572e;
+  font-weight: 900;
+  z-index: 2;
+  margin-top: 6%;
   margin-right: 10%;
   margin-left: 10%;
+  margin-bottom: 0;
 }
 
-.AboutText {
+.BigHeader {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 7vw;
+  color: #ff9e5e;
+  text-align: left;
+  text-shadow: -0.4vw 0.4vh 0px #d9572e;
+  font-weight: 900;
+  z-index: 2;
+  margin-top: 6%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 0;
+}
+
+.MidText {
   font-family: sans-serif;
-  font-size: 2.25vw;
+  font-size: 2vw;
   color: #d9572e;
   font-weight: 100;
-  margin: 5%;
+  margin: 3%;
   margin-right: 12%;
   margin-left: 12%;
 
@@ -188,12 +207,53 @@ nav {
   text-align: center;
 }
 
+.profileHeader{
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 3vw;
+  font-weight: 900;
+  color: #d9572e;
+  text-align: left;
+  margin-left: 12%;
+  margin-top: 8%;
+
+}
+
 .profile {
   border-radius: 50%;
-  width: 30vw;
-  height: 30vw;
+  min-width: 30vw;
 	
 	animation: morph 10s linear infinite alternate;
+}
+
+.secondThird {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.inputBox {
+  height: 7.5vh;
+  width: 35vw;
+  background-color: #ffebcd;
+  border-color: #d9572e;
+  border-width: 0.75vh;
+  border-style: solid;
+}
+
+.submitButton {
+  height: 8vh;
+  width: 25vw;
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+  background-color: #ffebcd;
+  border-color: #d9572e;
+  border-width: 0.75vh;
+  border-style: solid;
+  font-family: 'Bagel Fat One', sans-serif;
+  border-radius: 100px;
+  color: #d9572e;
+  font-weight: 900;
+  font-size: 2vw;
 }
 
 @keyframes morph {
