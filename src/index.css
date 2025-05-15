@@ -91,13 +91,14 @@ img {
   top: 0;
   left: -25%;
   z-index: -1;
-  max-width: 120vw;
+  width: 120vw;
 }
 
 .AboutHeader {
   font-family: 'Bagel Fat One', sans-serif;
   font-size: 5vw;
   color: #d9572e;
+  margin: 3%;
   margin-right: 10%;
   margin-left: 10%;
 }
@@ -107,9 +108,10 @@ img {
   font-size: 2.25vw;
   color: #d9572e;
   font-weight: 100;
+  margin: 5%;
   margin-right: 12%;
   margin-left: 12%;
-  margin-bottom: 10%;
+
 }
 
 nav {
@@ -184,4 +186,24 @@ nav {
 
 .text-center {
   text-align: center;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+	
+	animation: morph 10s linear infinite alternate;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 60% 30% 60% 30%;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
 }

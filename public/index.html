@@ -44,14 +44,23 @@
 </html>
 
 <script>
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("banner").style.top = "0";
-    } else {
-      document.getElementById("banner").style.top = "-30%";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-  </script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("banner").style.top = "0";
+      } else {
+        document.getElementById("banner").style.top = "-30%";
+      }
+      prevScrollpos = currentScrollPos;
+    };
+
+    document.querySelectorAll('.profile').forEach(el => {
+      const delay = Math.random() * 5;
+      const duration = 8 + Math.random() * 4;
+      el.style.animationDelay = `${delay}s`;
+      el.style.animationDuration = `${duration}s`;
+    });
+  });
+</script>
