@@ -32,6 +32,16 @@ img {
   padding-left: 4vw;
 }
 
+textarea {
+  width: 35vw;
+  resize: none;
+  overflow: auto;
+  background-color: #ffebcd;
+  border-color: #d9572e;
+  border-width: 0.75vh;
+  border-style: solid;
+}
+
 #about {
   margin: 2vh 10vw 2vh 10vw;
   text-align: center;
@@ -254,6 +264,15 @@ nav {
   color: #d9572e;
   font-weight: 900;
   font-size: 2vw;
+}
+
+.submitButton:hover{
+  border-color: green;
+  color: green;
+}
+
+.submitButton:active {
+  transform: scale(1.2);
 }
 
 @keyframes morph {
