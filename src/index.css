@@ -286,3 +286,8 @@ nav {
     border-radius: 40% 60%;
   }
 }
+
+::-webkit-resizer {
+  background-image: url('images/Resizer.png');
+  background-size: contain;
+}

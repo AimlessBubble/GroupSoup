@@ -58,7 +58,7 @@ function Contact() {
           <label className='profileHeader m-5 mt-2 mb-2 w-25'>
             Message:
           </label>
-          <textarea rows="4" id='companyMessageInput' className='m-2'>
+          <textarea rows="8" id='companyMessageInput' className='m-2'>
 
           </textarea>
         </div>
@@ -67,7 +67,7 @@ function Contact() {
           <label className='profileHeader m-5 mt-2 mb-2 w-25'>
             How did you hear about us?
           </label>
-          <textarea rows="6" id='companyHearInput' className='m-2' >
+          <textarea rows="4" id='companyHearInput' className='m-2' >
 
           </textarea>
         </div>
