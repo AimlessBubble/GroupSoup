@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function About() {
   return (
     <div>
-      <img src={require('../images/SoupOverlay.png')} id='SoupLay'></img>
+      <img src={require('../images/GSVectorArt4.png')} id='SoupLay'></img>
       <h1 className='MidHeader text-right topElement'> BUILDING THE RECIPE <br/> FOR COMMUNITY </h1>
       <p className='MidText text-right'> Doom scrolling comes with an <br/> aftertaste, this is the story of how <br/> we plan to take online searches to <br/> real-life community through <br/> GroupSoup. <br/> <br/>  <br/><br/> <br/> </p>
       <h1 className='MidHeader text-center'> HOW IT ALL STARTED </h1>

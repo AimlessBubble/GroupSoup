@@ -96,9 +96,16 @@ button {
 #SoupLay {
   position: absolute;
   top: 0;
-  left: -25%;
+  left: -20%;
   z-index: -1;
-  width: 120vw;
+  width: 90vw;
+}
+
+#SoupPlant {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 160%;
+  object-fit: cover;
 }
 
 #Chart {
@@ -342,6 +349,26 @@ button:active,
 
 .topElement {
   padding-top: 18vh;
+}
+
+.VectorSection {
+  display: flex;
+  flex-direction: row;
+  margin: 0 12%;
+  text-align: left;
+}
+
+.VectorArt {
+  display: flex;
+  width: 15vw;
+  object-fit: contain;
+  align-items: center;
+  justify-items: center;
+}
+
+.VectorSection p {
+  margin: 5%;
+  min-width: 15%;
 }
 
 @keyframes morph {

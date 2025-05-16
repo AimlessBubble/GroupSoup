@@ -53,24 +53,27 @@ function Home() {
       <h1 className='MidHeader'> WHAT MAKES GROUPSOUP DIFFERENT? </h1>
       <img src={require('../images/Chart.png')} width='100%' id='Chart'></img>
       <h1 className='MidHeader text-center mb-4'> OUR SPECIAL RECIPE </h1>
-      <div className='d-flex flex-row'>
-        <p className='SmallText fw-bold w-25'>
+      <div className='VectorSection'>
+        <img  src={require('../images/GSVectorArt1.png')} className='VectorArt'></img>
+        <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
           Hyperlocal city-specific growth model
         </p>
         <p className='SmallText'> 
           Starting in Rochester, NY, GroupSoup will aim to increase foot traffic in businesses and lower the crime experienced by lower-income individuals.  via frequent market analysis.
         </p>
       </div>
-      <div className='d-flex flex-row'>
-        <p className='SmallText fw-bold w-25'>
+      <div className='VectorSection'>
+        <img  src={require('../images/GSVectorArt2.png')} className='VectorArt'></img>
+        <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
           Minimal Digital Distraction        
         </p>
         <p className='SmallText'> 
           While being a social platform, unlike bigger media companies, we want you off the app and in the world! We aim to have an action-based engagement model rather than an attention-based one.      
         </p>
       </div>
-      <div className='d-flex flex-row'>
-        <p className='SmallText fw-bold w-25'>
+      <div className='VectorSection'>
+        <img  src={require('../images/GSVectorArt3.png')} id='SoupPlant' className='VectorArt'></img>
+        <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
           Helping the broader Rochester community thrive.        
         </p>
         <p className='SmallText'> 
