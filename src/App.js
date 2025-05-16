@@ -6,10 +6,14 @@ import About from './components/About';
 import logo from './images/GroupSoupWhite.png';
 import Contact from './components/Contact';
 import Register from './components/Register';
+import ScrollToTop from './ScrollToTop';
+
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
+
       <div className={'App'}>
         <header id='mockBanner'></header>
         <header id='banner'>
