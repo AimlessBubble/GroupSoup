@@ -5,9 +5,13 @@ import { Link } from 'react-router-dom';
 function Contact() {
   return (
     <div>
-      <h1 className='BigHeader topElement'> WANT TO BECOME A <br/> PARTNERING <br/> BUSINESS? </h1>
-      <p className='MidText text-left'> At GroupSoup, we believe community is a team effort. We need the partnership of Rochester’s small businesses to turn our vision of a vibrant, connected community into reality. Tell us about your goals, and let’s see how we can help! </p>
-    
+      <div className='d-flex flex-row'>
+        <div>
+          <h1 className='BigHeader ms-5 ps-5 topElement '> WANT TO BECOME A <br/> PARTNERING <br/> BUSINESS? </h1>
+          <p className='MidText text-left ps-5'> At GroupSoup, we believe community is a team effort. We need the partnership of Rochester’s small businesses to turn our vision of a vibrant, connected community into reality. Tell us about your goals, and let’s see how we can help! </p>
+        </div>
+        <img src={require('../images/GSVectorArrowWithOutline.png')} className='Arrow'></img>
+      </div>
       <form>
         <div className='d-flex align-items-center justify-content-center'>
           <label className='profileHeader m-5 mb-2 mt-2 w-25'>
@@ -74,7 +78,7 @@ function Contact() {
 
         <button type='submit' className='bigButton d-flex align-items-center justify-content-center'> SUBMIT </button>
       </form>
-
+      <footer></footer>
     </div>
   );
 }

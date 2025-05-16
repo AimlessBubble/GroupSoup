@@ -5,9 +5,13 @@ import { Link } from 'react-router-dom';
 function Register() {
   return (
     <div>
-      <h1 className='BigHeader text-center topElement'>JOIN THE COMMUNITY <br/> REVOLUTION</h1>
-      <p className='MidText secondThird'> Be among the first to discover what life can be like with an accessible, vibrant community through GroupSoup in Rochester, NY! Please provide the information below so that we can reach out to you when we launch to the public!</p>
-
+      <div className='d-flex flex-row'>
+        <img src={require('../images/GSVectorArrowWithOutline.png')} className='ArrowInverse'></img>
+        <h1 className='BigHeader text-center topElement mb-5 ms-0 me-0 w-100'>JOIN THE COMMUNITY <br/> REVOLUTION</h1>
+        <img src={require('../images/GSVectorArrowWithOutline.png')} className='Arrow'></img>
+      </div>
+      <p className='MidText secondThird mt-0'> Be among the first to discover what life can be like with an accessible, vibrant community through GroupSoup in Rochester, NY! Please provide the information below so that we can reach out to you when we launch to the public!</p>
+      
       <form>
         <div className='d-flex align-items-center justify-content-center'>
           <label className='profileHeader m-5'>
@@ -29,6 +33,7 @@ function Register() {
 
         <button type='submit' className='bigButton'> SUBMIT </button>
       </form>
+      <footer></footer>
     </div>
   );
 }

@@ -35,6 +35,7 @@ function About() {
           <p className='MidText text-left'> Founder and Systems Designer of GroupSoup, became the third member of the founding team after meeting Zevez and Nathan at an event exploring the intersections of AI and consciousness. A student in RIT’s School of Individualized Study (SOIS), Sage concentrates on Political Science, Philosophy, AI, and Data Science. They bring a systems-thinking approach to GroupSoup, helping reimagine how communities are built and sustained in Rochester. Through their interdisciplinary focus and passion for social systems, Sage ensures that GroupSoup isn’t just another addition to Rochester’s landscape — but a force for positive, lasting cultural transformation.</p>
         </div>
       </div>
+      <footer></footer>
     </div>
   );
 }

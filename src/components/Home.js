@@ -16,13 +16,14 @@ function Home() {
           </p>
           <p className='SmallText'>
             This is due to... <br/>
-            <ul>
-              <li> busier schedules after education </li>
-              <li> increased responsibilities </li>
-              <li> lack of built-in community </li>
-              <li> people passing with age </li>
-            </ul>
           </p>
+          <ul className='SmallText'>
+            <li> busier schedules after education </li>
+            <li> increased responsibilities </li>
+            <li> lack of built-in community </li>
+            <li> people passing with age </li>
+          </ul>
+         
         </div>
         <div className='d-flex flex-column w-25 text-left'>
           <p className='SmallText fw-bold'>
@@ -81,14 +82,27 @@ function Home() {
         </p>
       </div>
       <div id='HomeFooter'>
-        <div className='d-flex flex-row'>
+        <div className='d-flex flex-row pb-5'>
           <h1 className='MidHeader text-center mt-5'> We plan to keep things fun and safe simultaneously </h1>
           <p className='MidText text-right mt-5 ms-4 pt-5 pe-5'> GroupSoup will partner with local businesses to create meeting hubs along with our inherent “buddy-system” platform model for people to safely interact with one another.  </p>
         </div>
-        <h1 className='HugeHeader text-center ps-0 pe-0'> JOIN THE COMMUNITY REVOLUTION </h1>
-        <Link className='LinkStyles flex-grow-0' to='/register'>
-          <div tabIndex={0} role='button' className='hugeLink d-flex align-items-center justify-content-center' > PRE-REGISTER HERE </div>
-        </Link>
+
+        <div className='Bar mt-5 mb-5'></div>
+
+        <div className='d-flex flex-row'>
+          <img src={require('../images/GSVectorArrowWithOutline.png')} className='ArrowInverse'></img>
+          <div className='d-flex flex-column'>
+            <h1 className='BigHeader text-center ps-0 pe-0 pt-5'> JOIN THE COMMUNITY REVOLUTION </h1>
+            <Link className='LinkStyles flex-grow-0' to='/register'>
+              <div tabIndex={0} role='button' className='hugeLink d-flex align-items-center justify-content-center' >
+                PRE-REGISTER HERE 
+              </div>
+            </Link>
+          </div>
+          <img src={require('../images/GSVectorArrowWithOutline.png')} className='Arrow'></img>
+
+        </div>
+        <footer></footer>
       </div>
       
     </div>

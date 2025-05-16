@@ -48,6 +48,10 @@ textarea {
   font-size: 2vw;
 }
 
+footer {
+  height: 25vh;
+}
+
 button {
   text-decoration: none;
 }
@@ -139,8 +143,7 @@ button {
   font-weight: 900;
   z-index: 2;
   margin-top: 6%;
-  margin-right: 10%;
-  margin-left: 10%;
+
   margin-bottom: 0;
 }
 
@@ -299,7 +302,6 @@ nav .LinkStyles div:active {
   width: 25vw;
   margin: auto;
   margin-top: 10vh;
-  margin-bottom: 25vh;
   background-color: #fff4e3;
   border-color: #d9572e;
   border-width: 0.75vh;
@@ -316,7 +318,6 @@ nav .LinkStyles div:active {
     width: 45vw;
     margin: auto;
     margin-top: 15vh;
-    margin-bottom: 25vh;
     background-color: #fff4e3;
     border-color: #d9572e;
     border-width: 0.75vh;
@@ -369,6 +370,36 @@ button:active,
 .VectorSection p {
   margin: 5%;
   min-width: 15%;
+}
+
+.Arrow {
+  display: flex;
+  width: 15vw;
+  object-fit: contain;
+  align-items: center;
+  justify-items: center;
+  transform: scaleX(-1);
+  align-self: flex-end;
+  padding: 0;
+}
+
+.ArrowInverse {
+  display: flex;
+  width: 15vw;
+  object-fit: contain;
+  align-items: center;
+  justify-items: center;
+  align-self: flex-end;
+  padding: 0;
+}
+
+.Bar {
+  display: flex;
+  height: 2vh;
+  width: 60vw;
+  align-self: center;
+  background-color: #d9572e;
+  margin: auto;
 }
 
 @keyframes morph {
