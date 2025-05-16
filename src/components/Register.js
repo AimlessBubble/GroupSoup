@@ -27,7 +27,7 @@ function Register() {
           </input>
         </div>
 
-        <button type='submit' className='submitButton'> SUBMIT </button>
+        <button type='submit' className='bigButton'> SUBMIT </button>
       </form>
     </div>
   );

@@ -72,7 +72,7 @@ function Contact() {
           </textarea>
         </div>
 
-        <button type='submit' className='submitButton d-flex align-items-center justify-content-center'> SUBMIT </button>
+        <button type='submit' className='bigButton d-flex align-items-center justify-content-center'> SUBMIT </button>
       </form>
 
     </div>

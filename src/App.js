@@ -17,16 +17,16 @@ function App() {
           <p className={'Slogan'}> GROUPSOUP </p>
           <nav>
             <Link className={'LinkStyles'} to="/">
-                    <button>Home</button>
+                    <div>Home</div>
             </Link>
             <Link className={'LinkStyles'} to="/about">
-                    <button>About</button>
+                    <div>About</div>
             </Link>
             <Link className={'LinkStyles'} to="/register">
-                    <button>Pre-<br/>Register</button>
+                    <div>Pre-<br/>Register</div>
             </Link>
             <Link className={'LinkStyles'} to="/contact">
-                    <button>Contact</button>
+                    <div>Contact</div>
             </Link>
           </nav>
         </header>

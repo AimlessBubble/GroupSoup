@@ -20,6 +20,9 @@ main {
   min-height: 0;
 }
 
+Link{
+  text-decoration: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -40,6 +43,13 @@ textarea {
   border-color: #d9572e;
   border-width: 0.75vh;
   border-style: solid;
+  font-family: sans-serif;
+  color: #d9572e;
+  font-size: 2vw;
+}
+
+button {
+  text-decoration: none;
 }
 
 #about {
@@ -77,16 +87,10 @@ textarea {
   height: 18vh;
 }
 
-#HomeText {
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 9vw;
-  color: #ff9e5e;
-  text-align: left;
-  margin-left: 15%;
-  margin-top: 2%;
-  text-shadow: -1vw 1vh 0px #d9572e;
-  font-weight: 900;
-  z-index: 2;
+#HomeImage {
+  background-image: url('images/lameimage.jpg');
+  background-size: cover;
+  height: 100vh;
 }
 
 #SoupLay {
@@ -95,6 +99,14 @@ textarea {
   left: -25%;
   z-index: -1;
   width: 120vw;
+}
+
+#Chart {
+  padding: 5vh 7.5vw 5vh 7.5vw;
+}
+
+#HomeFooter {
+  background-color: #ffebcd ;
 }
 
 .MidHeader {
@@ -125,9 +137,32 @@ textarea {
   margin-bottom: 0;
 }
 
+.HugeHeader {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 9vw;
+  color: #ff9e5e;
+  text-align: left;
+  padding-left: 15%;
+  padding-top: 30vh;
+  text-shadow: -1vw 1vh 0px #d9572e;
+  font-weight: 900;
+  z-index: 2;
+}
+
 .MidText {
   font-family: sans-serif;
   font-size: 2vw;
+  color: #d9572e;
+  font-weight: 100;
+  margin: 3%;
+  margin-right: 12%;
+  margin-left: 12%;
+
+}
+
+.SmallText {
+  font-family: sans-serif;
+  font-size: 1.5vw;
   color: #d9572e;
   font-weight: 100;
   margin: 3%;
@@ -165,9 +200,10 @@ nav {
 
 .LinkStyles {
   flex: 1;
+  text-decoration: none;
 }
 
-.LinkStyles button {
+nav .LinkStyles div {
   min-height: 100%;
   width: 100%;
   background-color: #f97623;
@@ -175,14 +211,20 @@ nav {
   font-size: 2vw;
   font-family: 'Fredoka One', sans-serif;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.LinkStyles button:hover {
+nav .LinkStyles div:hover {
   background-color: #d9572e	;
+  color: white;
 }
 
-.LinkStyles button:active {
+nav .LinkStyles div:active {
   font-size: 2.25vw;
+  transform: scale(1);
+  
 }
 
 .Overlay {
@@ -240,15 +282,18 @@ nav {
   border-color: #d9572e;
   border-width: 0.75vh;
   border-style: solid;
+  font-family: sans-serif;
+  color: #d9572e;
+  font-size: 2vw;
 }
 
-.submitButton {
+.bigButton {
   height: 8vh;
   width: 25vw;
   margin: auto;
   margin-top: 10vh;
   margin-bottom: 25vh;
-  background-color: #ffebcd;
+  background-color: #fff4e3;
   border-color: #d9572e;
   border-width: 0.75vh;
   border-style: solid;
@@ -259,21 +304,38 @@ nav {
   font-size: 2vw;
 }
 
-.submitButton:hover{
+.hugeLink {
+    height: 12.5vh;
+    width: 45vw;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 25vh;
+    background-color: #fff4e3;
+    border-color: #d9572e;
+    border-width: 0.75vh;
+    border-style: solid;
+    font-family: 'Bagel Fat One', sans-serif;
+    border-radius: 100px;
+    color: #d9572e;
+    font-weight: 900;
+    font-size: 3.5vw;
+    flex-grow: 0;
+}
+
+button:hover,
+.hugeLink:hover {
   border-color: green;
   color: green;
 }
 
-.submitButton:active {
+button:active,
+.hugeLink:active {
   transform: scale(1.2);
 }
 
 .fullImage{
-  top: 0;
-  left: 0;
   margin: 0;
   padding: 0;
-  position: absolute;
   width: 100vw;
   max-height: 100vh;
 }
