@@ -277,7 +277,11 @@ nav .LinkStyles div:active {
   border-radius: 50%;
   min-width: 30vw;
 	
-	animation: morph 10s linear infinite alternate;
+  animation-name: morph;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 10s;
 }
 
 .secondThird {

@@ -1,8 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 function About() {
+
+  useEffect(() => {
+    document.querySelectorAll('.profile').forEach(el => {
+      const delay = Math.random() * 5;
+      const duration = 8 + Math.random() * 4;
+
+      el.style.animation = 'none'; 
+      void el.offsetWidth; 
+      el.style.animation = `morph ${duration}s linear infinite alternate`;
+      el.style.animationDelay = `${delay}s`;
+
+    });
+  }, []);
+
   return (
     <div>
       <img src={require('../images/GSVectorArt4.png')} id='SoupLay'></img>
