@@ -10,15 +10,22 @@ import ScrollToTop from './ScrollToTop';
 
 
 function App() {
+
   return (
+
     <Router>
+
       <ScrollToTop />
 
       <div className={'App'}>
+
         <header id='mockBanner'></header>
+
         <header id='banner'>
+
           <img src={logo} alt="GroupSoup logo" height="100%"/>
           <p className={'Slogan'}> GROUPSOUP </p>
+          
           <nav>
             <Link className={'LinkStyles'} to="/">
                     <div>Home</div>
@@ -33,17 +40,22 @@ function App() {
                     <div>Contact</div>
             </Link>
           </nav>
+
         </header>
         
         <main>
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/register" element={<Register />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+
         </main>
+
       </div>
+      
     </Router>
   );
 }
