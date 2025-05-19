@@ -85,11 +85,9 @@ button {
 
 #banner {
   position: fixed;
-  display: block;
   transition: top 0.5s;
   display: flex;
   background-color: #f97623;
-  padding: 2vh;
   padding: 0px;
   width: 100%;
   z-index: 3;
