@@ -91,7 +91,9 @@ function Home() {
         </section>
 
         <section className='VectorSection'>
-          <img  src={require('../images/GSVectorArt3.webp')} id='SoupPlant' className='VectorArt' alt='Growing sprout'></img>
+          <div>
+            <img  src={require('../images/GSVectorArt3.webp')} id='SoupPlant' className='VectorArt' alt='Growing sprout'></img>
+          </div>
           <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
             Helping the broader Rochester community thrive.        
           </p>
