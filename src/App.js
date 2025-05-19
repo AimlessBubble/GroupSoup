@@ -19,8 +19,6 @@ function App() {
 
       <div className={'App'}>
 
-        <header id='mockBanner'></header>
-
         <header id='banner'>
 
           <img src={logo} alt="GroupSoup logo" height="100%"/>

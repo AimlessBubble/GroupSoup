@@ -64,14 +64,14 @@ function Home() {
 
       <section>
         <h1 className='MidHeader'> WHAT MAKES GROUPSOUP DIFFERENT? </h1>
-        <img src={require('../images/Chart.png')} width='100%' id='Chart'></img>
+        <img src={require('../images/Chart.png')} width='100%' id='Chart' alt='Competitor comparison chart'></img>
       </section>
 
       <section>
         <h1 className='MidHeader text-center mb-4'> OUR SPECIAL RECIPE </h1>
         
         <section className='VectorSection'>
-          <img  src={require('../images/GSVectorArt1.png')} className='VectorArt'></img>
+          <img  src={require('../images/GSVectorArt1.webp')} className='VectorArt' alt='Map pin graphic'></img>
           <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
             Hyperlocal city-specific growth model
           </p>
@@ -81,7 +81,7 @@ function Home() {
         </section>
 
         <section className='VectorSection'>
-          <img  src={require('../images/GSVectorArt2.png')} className='VectorArt'></img>
+          <img  src={require('../images/GSVectorArt2.webp')} className='VectorArt' alt='Ad block graphic'></img>
           <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
             Minimal Digital Distraction        
           </p>
@@ -91,7 +91,7 @@ function Home() {
         </section>
 
         <section className='VectorSection'>
-          <img  src={require('../images/GSVectorArt3.png')} id='SoupPlant' className='VectorArt'></img>
+          <img  src={require('../images/GSVectorArt3.webp')} id='SoupPlant' className='VectorArt' alt='Growing sprout'></img>
           <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
             Helping the broader Rochester community thrive.        
           </p>
@@ -111,7 +111,7 @@ function Home() {
         <div className='Bar mt-5 mb-5'></div>
 
         <section className='d-flex flex-row'>
-          <img src={require('../images/GSVectorArrowWithOutline.png')} className='ArrowInverse'></img>
+          <img src={require('../images/GSVectorArrowWithOutline.webp')} className='ArrowInverse' alt='Content guiding arrow'></img>
           
           <div className='d-flex flex-column'>
             <h1 className='BigHeader text-center ps-0 pe-0 pt-5'> JOIN THE COMMUNITY REVOLUTION </h1>
@@ -122,7 +122,7 @@ function Home() {
             </Link> 
           </div>
           
-          <img src={require('../images/GSVectorArrowWithOutline.png')} className='Arrow'></img>   
+          <img src={require('../images/GSVectorArrowWithOutline.webp')} className='Arrow' alt='Content guiding arrow'></img>   
         </section>
 
         <footer></footer>

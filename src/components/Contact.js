@@ -13,7 +13,7 @@ function Contact() {
           <h1 className='BigHeader ms-5 ps-5 topElement '> WANT TO BECOME A <br/> PARTNERING <br/> BUSINESS? </h1>
           <p className='MidText text-left ps-5'> At GroupSoup, we believe community is a team effort. We need the partnership of Rochester’s small businesses to turn our vision of a vibrant, connected community into reality. Tell us about your goals, and let’s see how we can help! </p>
         </div>
-        <img src={require('../images/GSVectorArrowWithOutline.png')} className='Arrow'></img>
+        <img src={require('../images/GSVectorArrowWithOutline.webp')} className='Arrow' alt='Content guiding arrow'></img>
       </section>
 
       <form>
