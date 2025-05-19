@@ -14,9 +14,9 @@ function Home() {
 
       <h1 className='MidHeader text-center '> SOCIAL MEDIA, REIMAGINED TO HELP <br/> YOU ACCESS COMMUNITY. </h1>
       
-      <div className='d-flex flex-row m-5'>
+      <section className='d-flex flex-row m-5'>
 
-        <div className='d-flex flex-column w-25 text-left'>
+        <section className='d-flex flex-column w-25 text-left'>
           <p className='SmallText fw-bold'>
             Communities get smaller as we age.
           </p>
@@ -30,9 +30,9 @@ function Home() {
             <li> lack of built-in community </li>
             <li> people passing with age </li>
           </ul>
-        </div>
+        </section>
 
-        <div className='d-flex flex-column w-25 text-left'>
+        <section className='d-flex flex-column w-25 text-left'>
           <p className='SmallText fw-bold'>
             Built-in communities are far and few.
           </p>
@@ -40,73 +40,77 @@ function Home() {
             85% of American adults are unable to maintain access to high-quality built-in communities provided in higher education. <br/> <br/>
             Less than 43% of Americans have active in-person relationships that are proven to aid mental health. 
           </p>
-        </div>
+        </section>
         
-        <div className='d-flex flex-column w-25 text-left'>
+        <section className='d-flex flex-column w-25 text-left'>
           <p className='SmallText fw-bold'>
             A lack of community leads to increased mental health risks.
           </p>
           <p className='SmallText'>
             Research tells us that people can process their challenges better with the presence of appraisal support and community.
           </p>
-        </div>
+        </section>
 
-        <div className='d-flex flex-column w-25 text-left'>
+        <section className='d-flex flex-column w-25 text-left'>
           <p className='SmallText fw-bold'>
             Community is the key to living well.
           </p>
           <p className='SmallText'>
             Community held great importance during times of uncertainty during the 14th  century; this methodology has been lost over time.    
           </p>
-        </div>
+        </section>
 
-      </div>
+      </section>
 
-      <h1 className='MidHeader'> WHAT MAKES GROUPSOUP DIFFERENT? </h1>
-      <img src={require('../images/Chart.png')} width='100%' id='Chart'></img>
+      <section>
+        <h1 className='MidHeader'> WHAT MAKES GROUPSOUP DIFFERENT? </h1>
+        <img src={require('../images/Chart.png')} width='100%' id='Chart'></img>
+      </section>
 
-      <h1 className='MidHeader text-center mb-4'> OUR SPECIAL RECIPE </h1>
-      
-      <div className='VectorSection'>
-        <img  src={require('../images/GSVectorArt1.png')} className='VectorArt'></img>
-        <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
-          Hyperlocal city-specific growth model
-        </p>
-        <p className='SmallText'> 
-          Starting in Rochester, NY, GroupSoup will aim to increase foot traffic in businesses and lower the crime experienced by lower-income individuals.  via frequent market analysis.
-        </p>
-      </div>
+      <section>
+        <h1 className='MidHeader text-center mb-4'> OUR SPECIAL RECIPE </h1>
+        
+        <section className='VectorSection'>
+          <img  src={require('../images/GSVectorArt1.png')} className='VectorArt'></img>
+          <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
+            Hyperlocal city-specific growth model
+          </p>
+          <p className='SmallText'> 
+            Starting in Rochester, NY, GroupSoup will aim to increase foot traffic in businesses and lower the crime experienced by lower-income individuals.  via frequent market analysis.
+          </p>
+        </section>
 
-      <div className='VectorSection'>
-        <img  src={require('../images/GSVectorArt2.png')} className='VectorArt'></img>
-        <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
-          Minimal Digital Distraction        
-        </p>
-        <p className='SmallText'> 
-          While being a social platform, unlike bigger media companies, we want you off the app and in the world! We aim to have an action-based engagement model rather than an attention-based one.      
-        </p>
-      </div>
+        <section className='VectorSection'>
+          <img  src={require('../images/GSVectorArt2.png')} className='VectorArt'></img>
+          <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
+            Minimal Digital Distraction        
+          </p>
+          <p className='SmallText'> 
+            While being a social platform, unlike bigger media companies, we want you off the app and in the world! We aim to have an action-based engagement model rather than an attention-based one.      
+          </p>
+        </section>
 
-      <div className='VectorSection'>
-        <img  src={require('../images/GSVectorArt3.png')} id='SoupPlant' className='VectorArt'></img>
-        <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
-          Helping the broader Rochester community thrive.        
-        </p>
-        <p className='SmallText'> 
-          By utilizing local brick-and-mortar businesses, GroupSoup avoids fixed-rent costs while aiding foot traffic for the small Rochesterian-owned businesses.         
-        </p>
-      </div>
+        <section className='VectorSection'>
+          <img  src={require('../images/GSVectorArt3.png')} id='SoupPlant' className='VectorArt'></img>
+          <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
+            Helping the broader Rochester community thrive.        
+          </p>
+          <p className='SmallText'> 
+            By utilizing local brick-and-mortar businesses, GroupSoup avoids fixed-rent costs while aiding foot traffic for the small Rochesterian-owned businesses.         
+          </p>
+        </section>
+      </section>
 
-      <div id='HomeFooter'>
+      <section id='HomeFooter'>
 
-        <div className='d-flex flex-row pb-5'>
+        <section className='d-flex flex-row pb-5'>
           <h1 className='MidHeader text-center mt-5'> We plan to keep things fun and safe simultaneously </h1>
           <p className='MidText text-right mt-5 ms-4 pt-5 pe-5'> GroupSoup will partner with local businesses to create meeting hubs along with our inherent “buddy-system” platform model for people to safely interact with one another.  </p>
-        </div>
+        </section>
 
         <div className='Bar mt-5 mb-5'></div>
 
-        <div className='d-flex flex-row'>
+        <section className='d-flex flex-row'>
           <img src={require('../images/GSVectorArrowWithOutline.png')} className='ArrowInverse'></img>
           
           <div className='d-flex flex-column'>
@@ -119,11 +123,11 @@ function Home() {
           </div>
           
           <img src={require('../images/GSVectorArrowWithOutline.png')} className='Arrow'></img>   
-        </div>
+        </section>
 
         <footer></footer>
 
-      </div>
+      </section>
       
     </div>
   );
