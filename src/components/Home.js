@@ -14,9 +14,9 @@ function Home() {
 
       <h1 className='MidHeader text-center '> SOCIAL MEDIA, REIMAGINED TO HELP <br/> YOU ACCESS COMMUNITY. </h1>
       
-      <section className='d-flex flex-row m-5'>
+      <section className='d-flex flex-column flex-md-row m-5'>
 
-        <section className='d-flex flex-column w-25 text-left'>
+        <section className='d-flex flex-column w-100 w-md-25 text-left'>
           <p className='SmallText fw-bold'>
             Communities get smaller as we age.
           </p>
@@ -32,7 +32,7 @@ function Home() {
           </ul>
         </section>
 
-        <section className='d-flex flex-column w-25 text-left'>
+        <section className='d-flex flex-column w-100 w-md-25 text-left'>
           <p className='SmallText fw-bold'>
             Built-in communities are far and few.
           </p>
@@ -42,7 +42,7 @@ function Home() {
           </p>
         </section>
         
-        <section className='d-flex flex-column w-25 text-left'>
+        <section className='d-flex flex-column w-100 w-md-25 text-left'>
           <p className='SmallText fw-bold'>
             A lack of community leads to increased mental health risks.
           </p>
@@ -51,7 +51,7 @@ function Home() {
           </p>
         </section>
 
-        <section className='d-flex flex-column w-25 text-left'>
+        <section className='d-flex flex-column w-100 w-md-25 text-left'>
           <p className='SmallText fw-bold'>
             Community is the key to living well.
           </p>
@@ -63,7 +63,7 @@ function Home() {
       </section>
 
       <section>
-        <h1 className='MidHeader'> WHAT MAKES GROUPSOUP DIFFERENT? </h1>
+        <h1 className='MidHeader text-center'> WHAT MAKES GROUPSOUP DIFFERENT? </h1>
         <img src={require('../images/Chart.png')} width='100%' id='Chart' alt='Competitor comparison chart'></img>
       </section>
 
@@ -72,7 +72,7 @@ function Home() {
         
         <section className='VectorSection'>
           <img  src={require('../images/GSVectorArt1.webp')} className='VectorArt' alt='Map pin graphic'></img>
-          <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
+          <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
             Hyperlocal city-specific growth model
           </p>
           <p className='SmallText'> 
@@ -82,7 +82,7 @@ function Home() {
 
         <section className='VectorSection'>
           <img  src={require('../images/GSVectorArt2.webp')} className='VectorArt' alt='Ad block graphic'></img>
-          <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
+          <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
             Minimal Digital Distraction        
           </p>
           <p className='SmallText'> 
@@ -94,7 +94,7 @@ function Home() {
           <div>
             <img  src={require('../images/GSVectorArt3.webp')} id='SoupPlant' className='VectorArt' alt='Growing sprout'></img>
           </div>
-          <p className='SmallText fw-bold w-25 d-flex align-items-center justify-content-center'>
+          <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
             Helping the broader Rochester community thrive.        
           </p>
           <p className='SmallText'> 
@@ -105,9 +105,9 @@ function Home() {
 
       <section id='HomeFooter'>
 
-        <section className='d-flex flex-row pb-5'>
+        <section className='d-flex flex-column flex-md-row pb-5'>
           <h1 className='MidHeader text-center mt-5'> We plan to keep things fun and safe simultaneously </h1>
-          <p className='MidText text-right mt-5 ms-4 pt-5 pe-5'> GroupSoup will partner with local businesses to create meeting hubs along with our inherent “buddy-system” platform model for people to safely interact with one another.  </p>
+          <p className='MidText text-center p-auto mt-5 ms-md-4 pt-md-5 pe-md-5'> GroupSoup will partner with local businesses to create meeting hubs along with our inherent “buddy-system” platform model for people to safely interact with one another.  </p>
         </section>
 
         <div className='Bar mt-5 mb-5'></div>

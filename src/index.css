@@ -29,11 +29,6 @@ code {
     monospace;
 }
 
-img {
-  padding: 2vh;
-  padding-right: 0px;
-  padding-left: 4vw;
-}
 
 nav {
   display: flex;
@@ -82,6 +77,7 @@ button {
   display: flex;
   flex-direction: column;
 }
+
 
 #banner {
   position: fixed;
@@ -244,7 +240,9 @@ button {
 .profile {
   border-radius: 50%;
   min-width: 30vw;
-	
+	padding: 2vw;
+  padding-left: 4vw;
+  padding-right: 0;
   animation-name: morph;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -413,4 +411,60 @@ nav .LinkStyles div:active {
 ::-webkit-resizer {
   background-image: url('images/Resizer.png');
   background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  
+  .Slogan {
+    display: none;
+  }
+
+  .HugeHeader {
+    font-size: 9vh;
+  }
+
+  .BigHeader {
+    font-size: 7vh;
+  }
+
+  .MidHeader {
+    font-size: 5vh;
+  }
+
+  .MidText {
+    font-size: 3vh;
+  }
+
+  .SmallText {
+    font-size: 3vh;
+  }
+
+  textarea {
+    font-size: 2vh;
+  }
+
+  .inputBox {
+    font-size: 2vh;
+  }
+  
+  .bigButton {
+    font-size: 2vh;
+  }
+  
+  .profileHeader {
+    font-size: 3vh;
+  }
+
+  .VectorSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hugeLink {
+    font-size: 3.5vh;
+    width: auto;
+  }
 }

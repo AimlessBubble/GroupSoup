@@ -21,7 +21,7 @@ function App() {
 
         <header id='banner'>
 
-          <img src={logo} alt="GroupSoup logo" height="100%"/>
+          <img src={logo} alt="GroupSoup logo" height="100%" className='m-auto p-auto p-md-2 ps-md-4 pe-md-0'/>
           <p className={'Slogan'}> GROUPSOUP </p>
           
           <nav>
