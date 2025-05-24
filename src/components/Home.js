@@ -20,7 +20,7 @@ function Home() {
           <p className='SmallText fw-bold'>
             Communities get smaller as we age.
           </p>
-          <p className='SmallText'>
+          <p className='SmallText ps-4 ps-md-0'>
             This is due to... <br/>
           </p>
 
@@ -36,7 +36,7 @@ function Home() {
           <p className='SmallText fw-bold'>
             Built-in communities are far and few.
           </p>
-          <p className='SmallText'>
+          <p className='SmallText ps-4 ps-md-0'>
             85% of American adults are unable to maintain access to high-quality built-in communities provided in higher education. <br/> <br/>
             Less than 43% of Americans have active in-person relationships that are proven to aid mental health. 
           </p>
@@ -46,7 +46,7 @@ function Home() {
           <p className='SmallText fw-bold'>
             A lack of community leads to increased mental health risks.
           </p>
-          <p className='SmallText'>
+          <p className='SmallText ps-4 ps-md-0'>
             Research tells us that people can process their challenges better with the presence of appraisal support and community.
           </p>
         </section>
@@ -55,7 +55,7 @@ function Home() {
           <p className='SmallText fw-bold'>
             Community is the key to living well.
           </p>
-          <p className='SmallText'>
+          <p className='SmallText ps-4 ps-md-0'>
             Community held great importance during times of uncertainty during the 14th  century; this methodology has been lost over time.    
           </p>
         </section>

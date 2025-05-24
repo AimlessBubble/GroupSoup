@@ -335,6 +335,7 @@ button:active,
   object-fit: contain;
   align-items: center;
   justify-items: center;
+  margin: auto;
 }
 
 .VectorSection p {
@@ -413,7 +414,7 @@ nav .LinkStyles div:active {
   background-size: contain;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   nav {
     display: none;
   }
@@ -427,7 +428,7 @@ nav .LinkStyles div:active {
   }
 
   .BigHeader {
-    font-size: 7vh;
+    font-size: 5vh;
   }
 
   .MidHeader {
@@ -435,11 +436,11 @@ nav .LinkStyles div:active {
   }
 
   .MidText {
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 
   .SmallText {
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 
   textarea {
@@ -466,5 +467,23 @@ nav .LinkStyles div:active {
   .hugeLink {
     font-size: 3.5vh;
     width: auto;
+  }
+
+  .profile {
+    max-width: 80vw;
+    padding-right: 4vw;
+    padding-top: 8vh;
+  }
+
+  .SmallText {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #SoupLay {
+    position: absolute;
+    top: 30vh;
+    width: 100vw;
+    opacity: .3;
   }
 }

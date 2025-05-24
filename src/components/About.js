@@ -42,7 +42,7 @@ function About() {
       <section>
         <h1 className='MidHeader text-center'> MEET THE TEAM </h1>
 
-        <section className='d-flex flex-row align-items-center'>
+        <section className='d-flex flex-column flex-md-row align-items-center'>
           <img src={require('../images/Zevez.jpg')} className='profile' alt='Founder and Creative Lead, Zevez Zalay'></img>
           <div>
             <p className='profileHeader'> Zevez Zalay (they/them) </p>
@@ -50,7 +50,7 @@ function About() {
           </div>
         </section>
 
-        <section className='d-flex flex-row align-items-center'>
+        <section className='d-flex flex-column flex-md-row align-items-center'>
           <img src={require('../images/Nathan.jpg')} className='profile' alt='Founder and Technical Lead, Nathan Jackson'></img>
           <div>
             <p className='profileHeader'> Nathan Jackson (he/him) </p>
@@ -58,7 +58,7 @@ function About() {
           </div>
         </section>
 
-        <section className='d-flex flex-row align-items-center'>
+        <section className='d-flex flex-column flex-md-row align-items-center'>
           <img src={require('../images/Sage.jpg')} className='profile' alt='Founder and Systems Lead, Sage Sager'></img>
           <div>  
             <p className='profileHeader'> Sage Sager (they/them) </p>        
