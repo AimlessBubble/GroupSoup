@@ -57,10 +57,12 @@
       if (prevScrollpos > currentScrollPos) {
 
         document.getElementById("banner").style.top = "0";
+        document.getElementById("MobileNav").style.top = "18vh";
 
       } else {
 
-        document.getElementById("banner").style.top = "-30%";
+        document.getElementById("banner").style.top = "-18vh";
+        document.getElementById("MobileNav").style.top = "0";
 
       }
 
@@ -68,6 +70,15 @@
 
     };
     
+  });
+
+  document.addEventListener("click", function() {
+    var links = document.getElementById("MobileLinks");
+    if (links.style.display == "none" | links.style.display == "") {
+      links.style.display = "flex";
+    } else {
+      links.style.display = "none";
+    }
   });
   
 </script>

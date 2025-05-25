@@ -78,6 +78,9 @@ button {
   flex-direction: column;
 }
 
+#MobileNav {
+  display: none;
+}
 
 #banner {
   position: fixed;
@@ -91,7 +94,7 @@ button {
 }
 
 #HomeImage {
-  background-image: url('images/lameimage.jpg');
+  background-image: url('images/lameimage.webp');
   background-size: cover;
   height: 100vh;
 }
@@ -102,6 +105,7 @@ button {
   left: -20%;
   z-index: -1;
   width: 90vw;
+  aspect-ratio: 1296 / 1034.020;
 }
 
 #SoupPlant {
@@ -125,7 +129,7 @@ button {
   color: #ff9e5e;
   text-align: left;
   text-shadow: -0.4vw 0.4vh 0px #d9572e;
-  font-weight: 900;
+  font-weight: 700;
   z-index: 2;
   margin-top: 6%;
   margin-right: 10%;
@@ -139,7 +143,7 @@ button {
   color: #ff9e5e;
   text-align: left;
   text-shadow: -0.4vw 0.4vh 0px #d9572e;
-  font-weight: 900;
+  font-weight: 700;
   z-index: 2;
   margin-top: 6%;
 
@@ -154,7 +158,7 @@ button {
   padding-left: 15%;
   padding-top: 30vh;
   text-shadow: -1vw 1vh 0px #d9572e;
-  font-weight: 900;
+  font-weight: 700;
   z-index: 2;
 }
 
@@ -229,7 +233,7 @@ button {
 .profileHeader{
   font-family: 'Fredoka One', sans-serif;
   font-size: 3vw;
-  font-weight: 900;
+  font-weight: 700;
   color: #d9572e;
   text-align: left;
   margin-left: 12%;
@@ -279,7 +283,7 @@ button {
   font-family: 'Bagel Fat One', sans-serif;
   border-radius: 100px;
   color: #d9572e;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 2vw;
 }
 
@@ -295,7 +299,7 @@ button {
     font-family: 'Bagel Fat One', sans-serif;
     border-radius: 100px;
     color: #d9572e;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 3.5vw;
     flex-grow: 0;
 }
@@ -415,10 +419,31 @@ nav .LinkStyles div:active {
 }
 
 @media screen and (max-width: 767px) {
-  nav {
+  #DesktopNav {
     display: none;
   }
-  
+
+  #MobileNav {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    top: 18vh;
+    transition: top 0.5s;
+    z-index: 3;
+  }
+
+  #MobileLinks {
+    display: none;
+    flex-direction: column;
+  }
+
+   #SoupLay {
+    position: absolute;
+    top: 30vh;
+    width: 100vw;
+    opacity: .3;
+  }
+
   .Slogan {
     display: none;
   }
@@ -480,10 +505,5 @@ nav .LinkStyles div:active {
     margin-right: 0;
   }
 
-  #SoupLay {
-    position: absolute;
-    top: 30vh;
-    width: 100vw;
-    opacity: .3;
-  }
+ 
 }

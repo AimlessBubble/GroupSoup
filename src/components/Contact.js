@@ -61,10 +61,10 @@ function Contact() {
         </section>
 
         <section className='d-flex align-items-center justify-content-center'>
-          <label for="companyHearAbout" className='profileHeader m-5 mt-2 mb-2 w-25'>
+          <label for="companyHearInput" className='profileHeader m-5 mt-2 mb-2 w-25'>
             How did you hear about us?
           </label>
-          <textarea rows='4' id='companyHearInput' name='companyHearAbout' className='m-2' ></textarea>
+          <textarea rows='4' id='companyHearInput' name='companyHearInput' className='m-2' ></textarea>
         </section>
 
         <button type='submit' className='bigButton d-flex align-items-center justify-content-center'> SUBMIT </button>
