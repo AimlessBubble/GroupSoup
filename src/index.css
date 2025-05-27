@@ -576,5 +576,14 @@ nav .LinkStyles div:active {
   .overlayText {
     width: 50%;
   }
+
+  .inputBox {
+    width: 60%;
+  }
+
+  textarea {
+    width: 60%;
+  }
+  
  
 }

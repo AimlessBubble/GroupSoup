@@ -24,14 +24,14 @@ function Register() {
           <label for='nameInput' className='profileHeader m-5'>
             Name:
           </label>
-          <input type='text' id='nameInput' name='nameInput' className='inputBox'></input>
+          <input type='text' id='nameInput' name='nameInput' className='inputBox m-2'></input>
         </section>
 
         <section className='d-flex align-items-center justify-content-center'>
           <label for='emailInput' className='profileHeader m-5 mt-1 mb-1'>
             Email:
           </label>
-          <input type='email' id='emailInput' name='emailInput' className='inputBox'></input>
+          <input type='email' id='emailInput' name='emailInput' className='inputBox m-2'></input>
         </section>
 
         <button type='submit' className='bigButton'> SUBMIT </button>
