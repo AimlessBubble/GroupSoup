@@ -25,8 +25,8 @@ function About() {
 
       <section className='d-flex flex-column align-items-end justify-content-center'>
         <img src={require('../images/GSVectorArt4.webp')} id='SoupLay' alt='Soup bowl overlay' height='1034' width='1296'></img>
-        <h1 className='MidHeader text-right topElement w-75 w-md-50'> BUILDING THE RECIPE  FOR COMMUNITY </h1>
-        <p className='MidText text-right w-50 w-md-25'> Doom scrolling comes with an aftertaste, this is the story of how we plan to take online searches to real-life community through GroupSoup. <br/> <br/>  <br/><br/> <br/> </p>
+        <h1 className='MidHeader text-right topElement overlayHeader'> BUILDING THE RECIPE  FOR COMMUNITY </h1>
+        <p className='MidText text-right overlayText'> Doom scrolling comes with an aftertaste, this is the story of how we plan to take online searches to real-life community through GroupSoup. <br/> <br/>  <br/><br/> <br/> </p>
       </section>
 
       <section>

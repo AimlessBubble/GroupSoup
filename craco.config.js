@@ -7,10 +7,11 @@ const purgecss = require('@fullhuman/postcss-purgecss').default({
       'ms-md-4',
       'pt-md-5',
       'pe-md-5',
-      'ms-auto', // If you use ms-auto for centering
-      'm-auto',  // If you use m-auto as in your App.js for the logo
-      'p-auto',  // As used in your App.js for the logo
-      'mt-5',    // As used in your App.js for the slogan and Register component
+      'ms-auto', 
+      'm-auto',  
+      'p-auto', 
+      'mt-5',
+      'w-md-25',  
       /^mt-/, 
       /^mb-/, 
       /^ms-/, 

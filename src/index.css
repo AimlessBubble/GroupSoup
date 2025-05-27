@@ -367,6 +367,14 @@ button:active,
   padding-top: 18vh;
 }
 
+.overlayHeader {
+  width: 50%;
+}
+
+.overlayText {
+  width: 25%;
+}
+
 .VectorSection {
   display: flex;
   flex-direction: row;
@@ -561,5 +569,12 @@ nav .LinkStyles div:active {
     margin-bottom: 0;
   }
 
+  .overlayHeader {
+  width: 75%;
+}
+
+  .overlayText {
+    width: 50%;
+  }
  
 }
