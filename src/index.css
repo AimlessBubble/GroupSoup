@@ -223,6 +223,17 @@ button {
   margin-left: 12%;
 }
 
+.accordion .accordion-item {
+  border-width: 0;
+}
+
+.accordion-header .accordion-button:active,
+.accordion-header .accordion-button:focus {
+  border-width: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
 .App {
   font-weight: bold;
   display: flex;

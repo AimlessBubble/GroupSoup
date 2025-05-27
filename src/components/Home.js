@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Accordion } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
 
@@ -14,53 +16,68 @@ function Home() {
 
       <h1 className='MidHeader text-center '> SOCIAL MEDIA, REIMAGINED TO HELP <br/> YOU ACCESS COMMUNITY. </h1>
       
-      <section className='d-flex flex-column flex-md-row m-5'>
+      <Accordion className='d-flex flex-column flex-md-row m-5'>
 
-        <section className='d-flex flex-column w-100 w-md-25 text-left'>
-          <p className='SmallText fw-bold'>
-            Communities get smaller as we age.
-          </p>
-          <p className='SmallText ps-4 ps-md-0'>
-            This is due to... <br/>
-          </p>
+        <Accordion.Item eventKey='0' className='d-flex flex-column w-100 w-md-25 text-left'>
+          <Accordion.Header>
+            <div className='SmallText fw-bold'>
+              Communities get smaller as we age.
+            </div>
+          </Accordion.Header>
+          <Accordion.Body>
+            <div className='SmallText ps-4 ps-md-0'>
+              This is due to... <br/>
+              <ul className='SmallText'>
+                <li> busier schedules after education </li>
+                <li> increased responsibilities </li>
+                <li> lack of built-in community </li>
+                <li> people passing with age </li>
+            </ul>
+            </div>
+          </Accordion.Body>
+        </Accordion.Item>
 
-          <ul className='SmallText'>
-            <li> busier schedules after education </li>
-            <li> increased responsibilities </li>
-            <li> lack of built-in community </li>
-            <li> people passing with age </li>
-          </ul>
-        </section>
-
-        <section className='d-flex flex-column w-100 w-md-25 text-left'>
-          <p className='SmallText fw-bold'>
-            Built-in communities are far and few.
-          </p>
-          <p className='SmallText ps-4 ps-md-0'>
-            85% of American adults are unable to maintain access to high-quality built-in communities provided in higher education. <br/> <br/>
-            Less than 43% of Americans have active in-person relationships that are proven to aid mental health. 
-          </p>
-        </section>
+        <Accordion.Item eventKey='1' className='d-flex flex-column w-100 w-md-25 text-left'>
+          <Accordion.Header>
+            <div className='SmallText fw-bold'>
+              Built-in communities are far and few.
+            </div>
+          </Accordion.Header>
+          <Accordion.Body>
+            <div className='SmallText ps-4 ps-md-0'>
+              85% of American adults are unable to maintain access to high-quality built-in communities provided in higher education. <br/> <br/>
+              Less than 43% of Americans have active in-person relationships that are proven to aid mental health. 
+            </div>
+          </Accordion.Body>
+        </Accordion.Item>
         
-        <section className='d-flex flex-column w-100 w-md-25 text-left'>
-          <p className='SmallText fw-bold'>
-            A lack of community leads to increased mental health risks.
-          </p>
-          <p className='SmallText ps-4 ps-md-0'>
-            Research tells us that people can process their challenges better with the presence of appraisal support and community.
-          </p>
-        </section>
+        <Accordion.Item eventKey='2' className='d-flex flex-column w-100 w-md-25 text-left'>
+          <Accordion.Header>
+            <div className='SmallText fw-bold'>
+              A lack of community leads to increased mental health risks.
+            </div>
+          </Accordion.Header>
+          <Accordion.Body>
+            <div className='SmallText ps-4 ps-md-0'>
+             Research tells us that people can process their challenges better with the presence of appraisal support and community.
+            </div>
+          </Accordion.Body>
+        </Accordion.Item>
 
-        <section className='d-flex flex-column w-100 w-md-25 text-left'>
-          <p className='SmallText fw-bold'>
-            Community is the key to living well.
-          </p>
-          <p className='SmallText ps-4 ps-md-0'>
-            Community held great importance during times of uncertainty during the 14th  century; this methodology has been lost over time.    
-          </p>
-        </section>
+        <Accordion.Item eventKey='3' className='d-flex flex-column w-100 w-md-25 text-left'>
+          <Accordion.Header>
+            <div className='SmallText fw-bold'>
+              Community is the key to living well.
+            </div>
+          </Accordion.Header>
+          <Accordion.Body>
+            <div className='SmallText ps-4 ps-md-0'>
+              Community held great importance during times of uncertainty during the 14th  century; this methodology has been lost over time.    
+            </div>
+          </Accordion.Body>
+        </Accordion.Item>
 
-      </section>
+      </Accordion>
 
       <section>
         <h1 className='MidHeader text-center'> WHAT MAKES GROUPSOUP DIFFERENT? </h1>
