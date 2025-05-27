@@ -15,7 +15,14 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bagel+Fat+One&family=Barlow+Semi+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bagel+Fat+One&family=Barlow+Semi+Condensed:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bagel+Fat+One&family=Barlow+Semi+Condensed:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Bagel+Fat+One&family=Barlow+Semi+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    </noscript>
+    
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -57,12 +64,12 @@
       if (prevScrollpos > currentScrollPos) {
 
         document.getElementById("banner").style.top = "0";
-        document.getElementById("MobileNav").style.top = "18vh";
+        // document.getElementById("MobileNav").style.top = "18vh";
 
-      } else {
+      } else if(document.getElementById("MobileNav").style.left == "100vw") {
 
         document.getElementById("banner").style.top = "-18vh";
-        document.getElementById("MobileNav").style.top = "0";
+        // document.getElementById("MobileNav").style.top = "0";
 
       }
 
@@ -74,11 +81,11 @@
 
   document.addEventListener("click", function(event) {
     if (event.target.id === "BurgerMenu") {
-      var links = document.getElementById("MobileLinks");
-      if (links.style.display == "none" | links.style.display == "") {
-        links.style.display = "flex";
+      var links = document.getElementById("MobileNav");
+      if (links.style.left == "100vw" | links.style.left == "") {
+        links.style.left = "15vw"
       } else {
-        links.style.display = "none";
+        links.style.left = "100vw"
       }
     }
   });

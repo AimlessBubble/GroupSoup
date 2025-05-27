@@ -22,9 +22,11 @@ function App() {
         <header>
           <section id='banner'>
 
-            <img src={logo} alt="GroupSoup logo" height="100%" className='m-auto p-auto p-md-2 ps-md-4 pe-md-0'/>
-            <p className={'Slogan'}> GROUPSOUP </p>
-            
+            <section id='Brand'>
+              <img src={logo} alt="GroupSoup logo" className='logo'/>
+              <p className={'Slogan'}> GROUPSOUP </p>
+            </section>
+
             <nav id='DesktopNav'>
               <Link className={'LinkStyles'} to="/">
                       <div>Home</div>
@@ -40,9 +42,28 @@ function App() {
               </Link>
             </nav>
 
+            <button id='BurgerMenu'>
+               <span className='visually-hidden'> Menu </span>
+            </button>
+
           </section>
-          
+
           <nav id='MobileNav'>
+            <Link className={'LinkStyles'} to="/">
+                      <div>Home</div>
+            </Link>
+            <Link className={'LinkStyles'} to="/about">
+                    <div>About</div>
+            </Link>
+            <Link className={'LinkStyles'} to="/register">
+                    <div>Pre-<br/>Register</div>
+            </Link>
+            <Link className={'LinkStyles'} to="/contact">
+                    <div>Contact</div>
+            </Link>
+          </nav>
+          
+          {/* <nav id='MobileNav'>
             <button id='BurgerMenu'>Button</button>
             <div id='MobileLinks'>
               <Link className={'LinkStyles'} to="/">
@@ -58,7 +79,7 @@ function App() {
                       <div>Contact</div>
               </Link>
             </div>
-          </nav>
+          </nav> */}
 
         </header>
         

@@ -78,8 +78,33 @@ button {
   flex-direction: column;
 }
 
+#BurgerMenu {
+  width: 25vw;
+  height: 25vw;
+  background-image: url('images/Burger.webp');
+  margin: auto;
+  display: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  margin-right: 5%;
+}
+
 #MobileNav {
   display: none;
+  left: 100vw;
+  height: 82vh;  
+}
+
+#MobileNav .LinkStyles div {
+  background-color: #ff9e5e;
+  border-top: 3px solid #d9572e;
+  height: calc(82vw/4);
+  font-size: 6.5vh;
+  font-family: 'Bagel Fat One', sans-serif;
+  text-align: center;
+  padding-right: 15vw;
 }
 
 #banner {
@@ -105,7 +130,15 @@ button {
   left: -20%;
   z-index: -1;
   width: 90vw;
+  height: auto;
   aspect-ratio: 1296 / 1034.020;
+  object-fit: contain;
+}
+
+#Brand {
+  display: flex;
+  flex-direction: row;
+  z-index: 6;
 }
 
 #SoupPlant {
@@ -135,6 +168,14 @@ button {
   margin-right: 10%;
   margin-left: 10%;
   margin-bottom: 0;
+}
+
+.logo {
+  height: 100%;
+  margin: auto;
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 0;
 }
 
 .BigHeader {
@@ -428,24 +469,26 @@ nav .LinkStyles div:active {
     flex-direction: column;
     position:fixed;
     top: 18vh;
-    transition: top 0.5s;
+    transition: left 0.5s;
     z-index: 3;
-  }
-
-  #MobileLinks {
-    display: none;
-    flex-direction: column;
   }
 
    #SoupLay {
     position: absolute;
-    top: 30vh;
+    top: 50vh;
     width: 100vw;
     opacity: .3;
   }
 
+  #BurgerMenu {
+    display: flex;
+  }
+
   .Slogan {
-    display: none;
+    margin: auto;
+    margin-top: 0;
+    font-size: 3vh;
+    width: auto;
   }
 
   .HugeHeader {
@@ -453,11 +496,12 @@ nav .LinkStyles div:active {
   }
 
   .BigHeader {
-    font-size: 5vh;
+    font-size: 6vh;
   }
 
   .MidHeader {
-    font-size: 5vh;
+    font-size: 6vh;
+    text-shadow: -0.4vh 0.4vh 0px #d9572e;
   }
 
   .MidText {
@@ -503,6 +547,18 @@ nav .LinkStyles div:active {
   .SmallText {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  #Brand {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .logo {
+    height: 50%;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 0;
   }
 
  
