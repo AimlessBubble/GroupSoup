@@ -223,6 +223,11 @@ button {
   margin-left: 12%;
 }
 
+.accordion .accordion-button{
+  pointer-events: none;
+
+}
+
 .accordion .accordion-item {
   border-width: 0;
 }
@@ -232,6 +237,14 @@ button {
   border-width: 0;
   background-color: transparent;
   box-shadow: none;
+}
+
+.accordion .collapse:not(.show) {
+  display: block;
+}
+
+.accordion .accordion-button::after {
+  display: none;
 }
 
 .App {
@@ -595,6 +608,20 @@ nav .LinkStyles div:active {
   textarea {
     width: 60%;
   }
+
+  .accordion .accordion-button{
+  pointer-events: auto;
+
+}
+
+.accordion .collapse:not(.show) {
+  display: none;
+}
+
+.accordion .accordion-button::after {
+  display: block;
+}
+
   
  
 }
