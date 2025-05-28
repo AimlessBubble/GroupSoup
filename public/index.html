@@ -70,7 +70,7 @@
         document.getElementById("banner").style.top = "0";
         // document.getElementById("MobileNav").style.top = "18vh";
 
-      } else if(document.getElementById("MobileNav").style.left == "100vw" || document.getElementById("MobileNav")) {
+      } else if(window.getComputedStyle(document.getElementById("MobileNav")).left === window.innerWidth+"px") {
 
         document.getElementById("banner").style.top = "-18vh";
         // document.getElementById("MobileNav").style.top = "0";
@@ -84,14 +84,16 @@
   });
 
   document.addEventListener("click", function(event) {
+    var links = document.getElementById("MobileNav");
     if (event.target.id === "BurgerMenu") {
-      var links = document.getElementById("MobileNav");
       if (links.style.left == "100vw" | links.style.left == "") {
         links.style.left = "15vw"
       } else {
         links.style.left = "100vw"
       }
+    } else if (event.target.closest("#MobileNav")) {
+      links.style.left = "100vw"
     }
   });
-  
+
 </script>
