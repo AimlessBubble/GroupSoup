@@ -87,38 +87,53 @@ function Home() {
       <section>
         <h1 className='MidHeader text-center mb-4'> OUR SPECIAL RECIPE </h1>
         
-        <section className='VectorSection'>
-          <img  src={require('../images/GSVectorArt1.webp')} className='VectorArt' alt='Map pin graphic'></img>
-          <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
-            Hyperlocal city-specific growth model
-          </p>
-          <p className='SmallText'> 
-            Starting in Rochester, NY, GroupSoup will aim to increase foot traffic in businesses and lower the crime experienced by lower-income individuals.  via frequent market analysis.
-          </p>
-        </section>
+        <Accordion className='h-100'>
+          <Accordion.Item eventKey='4' className='VectorSection'>
+            <Accordion.Header>
+              <img  src={require('../images/GSVectorArt1.webp')} className='VectorArt' alt='Map pin graphic'></img>
+              <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
+                Hyperlocal city-specific growth model
+              </p>
+            </Accordion.Header>
+            <Accordion.Body>
+              <p className='SmallText w-100 text-left'> 
+                Starting in Rochester, NY, GroupSoup will aim to increase foot traffic in businesses and lower the crime experienced by lower-income individuals.  via frequent market analysis.
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
 
-        <section className='VectorSection'>
-          <img  src={require('../images/GSVectorArt2.webp')} className='VectorArt' alt='Ad block graphic'></img>
-          <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
-            Minimal Digital Distraction        
-          </p>
-          <p className='SmallText'> 
-            While being a social platform, unlike bigger media companies, we want you off the app and in the world! We aim to have an action-based engagement model rather than an attention-based one.      
-          </p>
-        </section>
+          <Accordion.Item eventKey='5' className='VectorSection'>
+            <Accordion.Header>
+              <img  src={require('../images/GSVectorArt2.webp')} className='VectorArt' alt='Ad block graphic'></img>
+              <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
+                Minimal Digital Distraction        
+              </p>
+            </Accordion.Header>
+            <Accordion.Body>
+              <p className='SmallText w-100 text-left'> 
+                While being a social platform, unlike bigger media companies, we want you off the app and in the world! We aim to have an action-based engagement model rather than an attention-based one.      
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
 
-        <section className='VectorSection'>
-          <div>
-            <img  src={require('../images/GSVectorArt3.webp')} id='SoupPlant' className='VectorArt' alt='Growing sprout'></img>
-          </div>
-          <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
-            Helping the broader Rochester community thrive.        
-          </p>
-          <p className='SmallText'> 
-            By utilizing local brick-and-mortar businesses, GroupSoup avoids fixed-rent costs while aiding foot traffic for the small Rochesterian-owned businesses.         
-          </p>
+          <Accordion.Item eventKey='6' className='VectorSection h-100'>
+            <Accordion.Header id='PlantButton'>
+              <div className='d-flex flex-column justify-content-end h-100'>
+                <img  src={require('../images/GSVectorArt3.webp')} id='SoupPlant' className='VectorArt' alt='Growing sprout'></img>
+              </div>
+              <p className='SmallText fw-bold w-auto w-md-25 d-flex align-items-center justify-content-center'>
+                Helping the broader Rochester community thrive.        
+              </p>
+            </Accordion.Header>
+            <Accordion.Body>
+              <p className='SmallText w-100 text-left'> 
+                By utilizing local brick-and-mortar businesses, GroupSoup avoids fixed-rent costs while aiding foot traffic for the small Rochesterian-owned businesses.         
+              </p>
+            </Accordion.Body>
+          </Accordion.Item>
+
+          </Accordion>
         </section>
-      </section>
 
       <section id='HomeFooter'>
 

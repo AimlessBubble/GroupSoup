@@ -29,7 +29,6 @@ code {
     monospace;
 }
 
-
 nav {
   display: flex;
   background-color: #f97623;
@@ -109,6 +108,7 @@ button {
 
 #banner {
   position: fixed;
+  top: 0;
   transition: top 0.5s;
   display: flex;
   background-color: #f97623;
@@ -146,6 +146,7 @@ button {
   padding-bottom: 0;
   height: 160%;
   object-fit: cover;
+  margin-top: auto;
 }
 
 #Chart {
@@ -154,6 +155,7 @@ button {
 
 #HomeFooter {
   background-color: #ffebcd ;
+  position: relative;
 }
 
 .MidHeader {
@@ -229,7 +231,7 @@ button {
 }
 
 .accordion .accordion-item {
-  border-width: 0;
+  border-width: 0; 
 }
 
 .accordion-header .accordion-button:active,
@@ -246,6 +248,17 @@ button {
 .accordion .accordion-button::after {
   display: none;
 }
+
+#PlantButton .accordion-button.collapsed {
+  margin-bottom: 0vw;
+  padding-bottom: 0vw;
+}
+
+#PlantButton .accordion-button.collapsed:active {
+  padding-bottom: calc(15vw * 0.2);
+  transform: padding 0.2 ease;
+}
+
 
 .App {
   font-weight: bold;
@@ -595,7 +608,7 @@ nav .LinkStyles div:active {
 
   .overlayHeader {
   width: 75%;
-}
+  }
 
   .overlayText {
     width: 50%;
@@ -611,17 +624,17 @@ nav .LinkStyles div:active {
 
   .accordion .accordion-button{
   pointer-events: auto;
+  height: 100%;
+  flex: 1 1 auto;
+  padding-bottom: 0;
+  }
 
-}
+  .accordion .collapse:not(.show) {
+    display: none;
+  }
 
-.accordion .collapse:not(.show) {
-  display: none;
-}
+  .accordion .accordion-button::after {
+    display: block;
+  }
 
-.accordion .accordion-button::after {
-  display: block;
-}
-
-  
- 
 }

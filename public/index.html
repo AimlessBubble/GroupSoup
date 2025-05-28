@@ -64,13 +64,13 @@
     window.onscroll = function () {
 
       var currentScrollPos = window.pageYOffset;
-
+      
       if (prevScrollpos > currentScrollPos) {
 
         document.getElementById("banner").style.top = "0";
         // document.getElementById("MobileNav").style.top = "18vh";
 
-      } else if(document.getElementById("MobileNav").style.left == "100vw") {
+      } else if(document.getElementById("MobileNav").style.left == "100vw" || document.getElementById("MobileNav")) {
 
         document.getElementById("banner").style.top = "-18vh";
         // document.getElementById("MobileNav").style.top = "0";
