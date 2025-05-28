@@ -1,5 +1,6 @@
 html, body, #root {
   height: 100%;
+  overflow-x: hidden;
   margin: 0;
 }
 
@@ -439,7 +440,7 @@ button:active,
   object-fit: contain;
   align-items: center;
   justify-items: center;
-  transform: scaleX(-1);
+  transform: scaleX(-1) rotate(25deg);
   align-self: flex-end;
   padding: 0;
 }
@@ -450,6 +451,7 @@ button:active,
   object-fit: contain;
   align-items: center;
   justify-items: center;
+  transform: rotate(25deg);
   align-self: flex-end;
   padding: 0;
 }
