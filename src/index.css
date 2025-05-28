@@ -527,6 +527,7 @@ nav .LinkStyles div:active {
 
   #BurgerMenu {
     display: flex;
+    max-height: 100%;
   }
 
   .Slogan {

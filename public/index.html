@@ -70,7 +70,7 @@
         document.getElementById("banner").style.top = "0";
         // document.getElementById("MobileNav").style.top = "18vh";
 
-      } else if(window.getComputedStyle(document.getElementById("MobileNav")).left === window.innerWidth+"px") {
+      } else if(parseFloat(window.getComputedStyle(document.getElementById("MobileNav")).left) >= window.innerWidth-2) {
 
         document.getElementById("banner").style.top = "-18vh";
         // document.getElementById("MobileNav").style.top = "0";
