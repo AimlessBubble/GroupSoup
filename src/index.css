@@ -1,6 +1,5 @@
 html, body, #root {
   height: 100%;
-  overflow-x: hidden;
   margin: 0;
 }
 
@@ -120,9 +119,10 @@ button {
 }
 
 #HomeImage {
-  background-image: url('images/lameimage.webp');
+  background-image: url('images/Rochester.webp');
   background-size: cover;
   height: 100vh;
+  background-position: center top;
 }
 
 #SoupLay {
@@ -140,6 +140,11 @@ button {
   display: flex;
   flex-direction: row;
   z-index: 6;
+}
+
+#MobileNav .LinkStyles div:active {
+  background-color: #d9572e;
+  font-size: 7.5vh;
 }
 
 #SoupPlant {
@@ -440,7 +445,7 @@ button:active,
   object-fit: contain;
   align-items: center;
   justify-items: center;
-  transform: scaleX(-1) rotate(25deg);
+  transform: scaleX(-1);
   align-self: flex-end;
   padding: 0;
 }
@@ -451,7 +456,6 @@ button:active,
   object-fit: contain;
   align-items: center;
   justify-items: center;
-  transform: rotate(25deg);
   align-self: flex-end;
   padding: 0;
 }
@@ -479,7 +483,7 @@ nav .LinkStyles div {
 }
 
 nav .LinkStyles div:hover {
-  background-color: #d9572e	;
+  background-color: #d9572e 	;
   color: white;
 }
 
