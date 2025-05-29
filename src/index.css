@@ -415,6 +415,7 @@ button:active,
 }
 
 .overlayText {
+  text-align: right;
   width: 25%;
 }
 
@@ -525,10 +526,10 @@ nav .LinkStyles div:active {
   }
 
    #SoupLay {
-    position: absolute;
-    top: 50vh;
+    position: relative;
+    top: -20vh;
     width: 100vw;
-    opacity: .3;
+    margin-bottom: -20vh;
   }
 
   #BurgerMenu {
@@ -618,7 +619,9 @@ nav .LinkStyles div:active {
   }
 
   .overlayText {
-    width: 50%;
+    text-align: center;
+    width: 75%;
+    margin: auto;
   }
 
   .inputBox {
