@@ -145,7 +145,7 @@ function Home() {
         <div className='Bar mt-5 mb-5'></div>
 
         <section className='d-flex flex-row'>
-          <img src={require('../images/GSVectorArrowWithOutline.webp')} className='ArrowInverse pb-5 mb-5 ' alt='Content guiding arrow'></img>
+          <img src={require('../images/GSNewVectorArrow.webp')} className='ArrowInverse pb-5 mb-5 ' alt='Content guiding arrow'></img>
           
           <div className='d-flex flex-column'>
             <h1 className='BigHeader text-center ps-0 pe-0 pt-5'> JOIN THE COMMUNITY REVOLUTION </h1>
@@ -156,7 +156,7 @@ function Home() {
             </Link> 
           </div>
           
-          <img src={require('../images/GSVectorArrowWithOutline.webp')} className='Arrow pb-5 mb-5 ' alt='Content guiding arrow'></img>   
+          <img src={require('../images/GSNewVectorArrow.webp')} className='Arrow pb-5 mb-5 ' alt='Content guiding arrow'></img>   
         </section>
 
         <footer></footer>
