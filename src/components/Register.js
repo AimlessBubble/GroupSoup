@@ -13,7 +13,7 @@ function Register() {
     setStatus("Submitting...");
 
     const { error } = await supabase
-      .from("preregisteration")
+      .from("pre_registration")
       .insert([{ name, email }]);
 
     if (error) {
